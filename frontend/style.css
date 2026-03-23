@@ -1,0 +1,21 @@
+/* Section Management */
+.page-section.d-none {
+    display: none !important;
+}
+
+/* Auth Visibility */
+body.authenticated .role-logged-out {
+    display: none !important;
+}
+body.not-authenticated .role-logged-in {
+    display: none !important;
+}
+
+/* Admin Access */
+.role-admin, .admin-only {
+    display: none !important;
+}
+body.is-admin .role-admin, 
+body.is-admin .admin-only {
+    display: block !important;
+}
