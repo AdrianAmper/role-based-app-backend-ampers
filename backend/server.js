@@ -127,6 +127,10 @@ app.get("/api/admin-test", verifyToken, isAdmin, (req, res) => {
   res.json({ message: "Admin access granted ✅" });
 });
 
+app.get("/", (req, res) => {
+  res.send("Server is running ✅");
+});
+
 // =========================
 // START SERVER
 // =========================
